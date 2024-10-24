@@ -1,6 +1,6 @@
 const quizData = [
     {
-        question: "スマートフォンは何を実現したでしょう？",
+        question: "　A、Bに入る数字は？",
         calculations: `１＋５＝６
         
 ３＋９＝１２
@@ -10,8 +10,8 @@ const quizData = [
 ３＋１０＝A
         
 １－６＝B`,
-        answers: ["B=7", "A=1", "B.A=13", "B=5", "B=9 "],
-        correct: 1  // 正しい答えは"B=7"
+        answers: ["A=1 B=7", "A=13 B=5", "A=1 B=9"],
+        correct: 0 // 正しい答えは"B=7"
     },
     {
         question: "プログラミング言語JavaScriptの発明者は誰ですか？",
@@ -190,7 +190,7 @@ function showMessage(message, color, isWrong = false) {
             messageElement.remove();
             fadeOutBackgroundAndRedirect();
         }, 500);
-    }, 10000);
+    }, 8000);
 }
 
 function fadeOutBackgroundAndRedirect() {
@@ -203,7 +203,7 @@ function fadeOutBackgroundAndRedirect() {
 
     setTimeout(() => {
         window.location.href = "https://incandescent-syrniki-95478a.netlify.app//";
-    }, 1000);
+    }, 800);
 }
 
 // 背景画像の設定
