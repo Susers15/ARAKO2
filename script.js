@@ -182,7 +182,7 @@ function showMessage(message, color, isWrong = false) {
 
     setTimeout(() => {
         messageElement.style.opacity = 1;
-    }, 85);
+    }, 75);
 
     setTimeout(() => {
         messageElement.style.opacity = 0;
@@ -190,7 +190,7 @@ function showMessage(message, color, isWrong = false) {
             messageElement.remove();
             fadeOutBackgroundAndRedirect();
         }, 500);
-    }, 7000);
+    }, 5000);
 }
 
 function fadeOutBackgroundAndRedirect() {
@@ -203,7 +203,7 @@ function fadeOutBackgroundAndRedirect() {
 
     setTimeout(() => {
         window.location.href = "https://incandescent-syrniki-95478a.netlify.app//";
-    }, 750);
+    }, 600);
 }
 
 // 背景画像の設定
