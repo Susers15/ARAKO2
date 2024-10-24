@@ -9,7 +9,10 @@ const quizData = [
 
 
          {
-        question: "現代のスマホの振動(Taptic Engine)は、モーターではありません。では、何が使われているでしょう？",
+         question: " ",
+        calculations: `現代のスマホの振動(Taptic Engine)は、
+モーターではありません。では、何が使われているでしょう？`,
+
         answers: ["スピーカー", "スマホの中に人がいる", "コイルとバネ", "静電気"],
         correct: 2 // 正しい答えは"ブレンダン・イッチ"
     }
@@ -178,15 +181,15 @@ function showMessage(message, color, isWrong = false) {
 
     setTimeout(() => {
         messageElement.style.opacity = 1;
-    }, 75);
+    }, 70);
 
     setTimeout(() => {
         messageElement.style.opacity = 0;
         setTimeout(() => {
             messageElement.remove();
             fadeOutBackgroundAndRedirect();
-        }, 500);
-    }, 5000);
+        }, 450);
+    }, 4500);
 }
 
 function fadeOutBackgroundAndRedirect() {
@@ -199,7 +202,7 @@ function fadeOutBackgroundAndRedirect() {
 
     setTimeout(() => {
         window.location.href = "https://incandescent-syrniki-95478a.netlify.app//";
-    }, 600);
+    }, 550);
 }
 
 // 背景画像の設定
